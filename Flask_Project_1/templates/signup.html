@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            form{
+                padding-left: 25%;
+                padding-right: 25%;
+                padding-top: 5%;
+                font-style: italic;
+                color: darkred;
+                font-weight: bolder;
+                
+                
+               
+            }
+            body{
+                background-position: center center;
+                background-image: url("/static/photo8.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <img src="" alt="">
+        <form method="POST" action="/aftersignup/">
+            
+            <h1 style="padding-left: 35%;">SignUp Form</h1>
+            
+                <h1 style="color:black; padding-left: 30% ;size: 30px;">{{error}}</h1>
+            
+          
+            
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="First">First Name</label>
+                    <input type="name" class="form-control" id="fname" placeholder="First Name" name="firstname">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="LastName">Last Name</label>
+                    <input type="lname" class="form-control" id="lname" placeholder="Last Name" name="lastname">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label><br>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <small> Password must include @,#,£,*,&,.,+,^,$,! and min 8 character with Upper </small>
+                    
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password">
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address">
+                </div>
+                <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="address2" >
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity"name="city">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState" >State</label>
+                    <select id="inputState" class="form-control" name="State">
+                    <option selected>Choose...</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip" >Zip/PinCode</label>
+                    <input type="text" class="form-control" id="inputZip" name = "pincode">
+                </div>
+                </div>
+                <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                    CONFIRM
+                    </label>
+                </div>
+                </div>
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+            </form>
+         
+        
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+             body{
+                 background-color: bisque;
+             }
+             h1,p{
+                 color: black;
+             }
+        </style>
+       
+
+    </head>
+
+    <body>
+        <h1>This is my first project </h1>
+        <mark><p>I AM VERY HAPPY </p></mark>
+        {% if n %}
+        <h1>Welcome {{n}} and your interest in {{int}} </h1>
+        {% endif %}
+        {% for name in x.items()%}
+        <h1 style="color: black;">{{ key }}={{value }}</h1>
+        {% endfor %}
+    </body>
+</html>

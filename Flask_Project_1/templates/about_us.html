@@ -1,0 +1,522 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+            *
+{
+    margin: 0px;
+    padding: 0px; 
+}
+.nav-bar{
+    background: #041a09;
+    color: #fff;
+    padding: 30px;
+    font-family: sans-serif;
+    
+}
+.nav-bar img{
+    height: 65px;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.menu-right{
+    text-align: right;
+    
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin: -20px;
+    list-style: none;
+    margin-right: 50px;
+    margin-bottom: -10px;
+    cursor: pointer;
+    
+}
+
+
+}
+span{
+    margin: 10 30px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+.fling-minislide {width:100%; height:300px; padding-bottom: 50%; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+
+ul li :hover{
+    background-color: black;
+    
+}
+ 
+
+.navigationbar{
+    size: 100%;
+    background-color: darkslategray;
+
+}
+.nav-item{
+    font-size: 24px;
+    margin-left: 12%;
+    background-color:darkslategray;
+    
+
+}
+body{
+    background-color: darkslategray;
+
+
+}
+
+.nav-link{
+    color: floralwhite;
+}
+
+.card{
+    height: 80px;
+    width:  100px;
+}
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 30.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  padding-top: 40px;
+  overflow: cover;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+    padding-left: 60px;
+    
+    
+    
+}
+.card img{
+    box-shadow: 4px 5px rgba(0, 0, 0, 2);
+    height: 190px;
+    width: 190px;
+}
+
+.card img:hover{
+  transform: scale(1.4);
+  transition:step-end;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 50px 16px;
+ 
+}
+
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;  
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 800%;
+}
+.button:hover {
+  background-color: #555;
+}
+
+.nave{
+    width: 88%;
+    height: 45%;
+  border: 15px solid  darkslategray;
+  padding: 50px;
+  margin: 20px;
+  margin-right: 20px;
+  object-fit: cover;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  
+  color: #202020;
+}
+footer{
+  position: relative;;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+ 
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background:  darkslategray;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background:  darkslategray;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background:  darkslategray;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:  darkslategray;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color:  darkslategray;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 600px){
+    span
+    {
+        display: block;
+    }
+    ul li{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+}
+
+p.title{
+  width: 160px;
+}
+.mybox2{
+  width: 100%;
+
+}
+.about{
+  padding-left:30%;
+  padding-right: 30%; 
+  padding-bottom: 2%;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+
+        </style>
+    </head>
+    <body>
+      <header>
+        <div class="nav-bar">
+          <a href="/about_us/"> <img src="/static/mylogo.png"></img></a>
+        <div class="menu-right">
+            <span onClick="myFunction()">&#9776;</span>
+            <ul id="menu"> 
+            <li>ABOUT US</li>    
+            <li><a href="/login/">LOGIN</a></li>    
+            <li><a href="/signup/">SIGNUP</a></li>    
+            <li><a href="#footer">CONTACT US</a></li>
+            </ul>
+        </div>
+        </div> 
+      </header>
+        <h1 style="padding-left: 30%; padding-top: 5%; padding-bottom: 2%;">WELCOME TO SINGH'S PLANTATIONS</h1>
+        <img class="mybox2" src="/static/mycollage.jpg"></img>
+      <div>
+        
+      </div>
+        <div class="fling-minislide">
+        <img src="/static/f1.jpg" alt="Slide 4">
+        <img src="/static/f2.jpg" alt="Slide 3">
+        <img src="/static/f3.jpg" alt="Slide 2" />
+        <img src="/static/f4.jpg" alt="Slide 1" />
+        </div>
+        <div>
+          <h1 style="padding-left: 40%; padding-top: 5%; padding-bottom: 2%;">ABOUT US</h1>
+          <div class="about">
+          <p >Singh's PLANTATIONS is organization, spreading greenery with its core philosophy of <b> “planting trees for the people, by the people”</b>.mission is to make "GREEN INDIA" our target is to develope and plant through out Indian states and  majorly in polluted cities of India, we are constantly escalating healthy-happy smiles through our trees.
+           With our each flourishing plant, we are maximizing socio-environmental impact and successfully back the detrimental demons of pollution and strengthening the livelihood of poor farmers to create a rich biodiverse ecosystem.</p><br>
+           <p>We'll Plant for you on your behalf,and we'll send you the certificate and tree photo with your tag name on it with geoloacation.From which you can find out and see your tree on Google Maps</p>
+          </div>
+        </div>
+        <div class="row" style="border: 12px solid floralwhite;max-width: 65%;overflow: auto; margin-left: 16%; padding-top: 40px; margin-top: 5%; height: 167%;">
+            <h1 style="color: floralwhite;margin-left: 40%; ">HOW WE WORK </h1>
+            <p style="color: floralwhite;margin-left: 40%;">WE IN WORK FOR WORLD HEALTH</p>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                  <img src="/static/Myproject.jpg" alt="Lights" style="width:100%;">
+                  <div class="caption">
+                    
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+       
+        
+        
+
+            <!DOCTYPE html>
+            <footer>
+            <html lang="en" dir="ltr">
+              <head>
+                <meta charset="utf-8">
+                
+                <link rel="stylesheet" href="style.css">
+                <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              </head>
+              <body>
+                <div class="content1">
+                  <div class="text">
+            </div>
+            <div class="p">
+          </div>
+            </div>
+            <footer>
+                  <div class="main-content" id="footer">
+                    <div class="left box">
+                      <h2>
+            About us</h2>
+            <div class="content">
+                        <a>
+                          We spreading greenery with  philosophy of “planting trees for the people, by the people”.
+                        </a>
+            <div class="social">
+                          <a href="#"><span class="fab fa-facebook-f"></span></a>
+                          <a href="#"><span class="fab fa-twitter"></span></a>
+                          <a href="#"><span class="fab fa-instagram"></span></a>
+                          <a href="#"><span class="fab fa-youtube"></span></a>
+                        </div>
+            </div>
+            </div>
+            <div class="center box">
+                      <h2>
+            Address</h2>
+            <div class="content">
+                        <div class="place">
+                          <a href="https://goo.gl/maps/VQaZFjPb67XgMZHbA"><span class="fas fa-map-marker-alt"></span></a>
+                          <span class="text">15 SODALA JAIPUR 302006</span>
+                        </div>
+            <div class="phone">
+                          <span class="fas fa-phone-alt"></span>
+                          <span class="text">0141222222</span>
+                        </div>
+            <div class="email">
+                          <span class="fas fa-envelope"></span>
+                          <span class="text">sinhg'splantation@gmail.com</span>
+                        </div>
+            </div>
+            </div>
+            <div class="right box">
+                      <h2>
+            Contact us</h2>
+            <div class="content">
+                        <form action="#">
+                          <div class="email">
+                            <div class="text">
+            Email *</div>
+            <input type="email" required>
+                          </div>
+            <div class="msg">
+                            <div class="text">
+            Message *</div>
+            <textarea id=".msgForm" rows="2" cols="25" required></textarea> 
+                          
+                          <br />
+            <div class="btn">
+            <button type="submit">Send</button>
+                          </div>
+            <div class="bottom">
+            
+                      <span class="credit">Created By <a href="#">SINGH'S PLANTATIONS</a>  </span>
+                      <span class="far fa-copyright"></span> 2020 All rights reserved.
+            
+            </div>
+          </footer> 
+        </footer> 
+            
+        
+    <script>
+        function myFunction(){
+            var x = document.getElementById("menu"); 
+            
+            if(x.style.display == "block")
+            {
+                x.style.display = "none";
+            }
+            else{
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            label{
+                color:darkred;
+                font-size: 40px;
+            }
+            body{background-image: url("/static/w1.jpg");
+            background-size: cover;
+            font: italic;
+            font-style: oblique;
+            
+            }
+            form{
+                padding-left: 30%;
+                padding-right: 30%;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <form method="POST" action="/aftersignup/">
+            <h1 style="color: darkred>;">{{error}}</h1>
+            
+            <div class="form-group">
+            <label for="exampleInputEmail1">Enter Email address</label>
+            <input type="email" name="email" placeholder="Enter email">
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Enter your Password</label>
+            <input type="password" name="passwd" placeholder="Password">
+          </div>
+
+          <div class="form-group">
+              <label>Select your gender</label><br>
+              <input type="radio" name="gender" value="Male" style="font: bolder;" ><h1 style="font: bold; color: darkred; font-size: 20px;">Male</h1><input type="radio" name="gender" value="Female"><h1 style="font: bold; color: darkred; font-size: 20px;">Female</h1>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Confrim</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="font: normal;">Submit</button>
+        </form>
+    </body>
+</html>
