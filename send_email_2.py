@@ -1,14 +1,14 @@
 
-
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import smtplib,ssl
 from getpass import getpass
+import os,sys
 
 
 from_email = "simrangrover5@gmail.com"
-to_email = "simrangrover5@gmail.com"
-password = getpass("\n Enter your password : ")
+to_email = sys.argv[1]
+password = os.environ.get("EMAIL_HOST_PASSWORD")
 
 message = MIMEMultipart("alternative")
 message["Subject"] = "Test Mail"
@@ -23,11 +23,13 @@ content = """
 <body>
     <h1 style='color:red'>Hello everyone I am mail from python script</h1>
     <a href='https://myaccount.google.com/security'>Click on this link for you google security</a>
+    <label style='color:coral;font-size:30px'>Have a good day with this flower!!!! </label>
+    <img src='https://images.unsplash.com/photo-1464982326199-86f32f81b211?ixlib=rb-1.2.1&w=1000&q=80'>
 </body>
 </html>
 """
 
-m = MIMEText(content,"html")  #application/html
+m = MIMEText(content,"html","b")  #application/html
 #MIMEText(content,"plain")
 
 message.attach(m)  #message attach to the MIMEmultipart subject and this message will be send to receiver
