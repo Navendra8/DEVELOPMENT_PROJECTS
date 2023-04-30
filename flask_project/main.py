@@ -29,7 +29,7 @@ def afterlogin():
             data =cursor.fetchone()
             
             if data:
-                if data[1] == password:
+                if data[1]  == password:
                     return render_template("abc.html")
 
             else:
